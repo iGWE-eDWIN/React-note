@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #eee;
+  padding: 0 16px;
+  background-image: url('https://www.transparenttextures.com/patterns/cutcube.png');
+  padding: 0 16px;
+  /* height: fit-content;
+    border: 1px solid black; */
+}
+
+/* .container {
+    width: 100vw;
+    height: 100vh;
+  } */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px, 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 3);
+  /* width: 100vw; */
+  position: relative;
+}
+
+header h1 {
+  color: #fff;
+  font-family: cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  /* float: left; */
+  height: 76px;
+}
+
+.note h1 {
+  font-size: 0.75em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 0.5em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  /* border: 1px solid black; */
+  height: 40px;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  /* margin-right: 10px; */
+  color: #f5ba13;
+  border: 0px;
+  height: 10px;
+  width: 33px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 100%;
+  /* background-color: #f5ba13; */
+  /* margin-top: 0.5em; */
+}
+
+/* .note-container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+.inputTag {
+  border: none;
+  outline: none;
+}
+
+/* .authContainer {
+   align-items: center;
+    justify-content: center; */
+/* padding-bottom: 10em;
+} */
+
+@media (min-width: 700px) {
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding-bottom: 10em; */
+  }
+
+  .input-container {
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .inputTag {
+    width: 27vw;
+  }
+
+  .authContainer {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .note-container {
+      margin-left: 20px;
+    } */
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* align-items: center;
+    justify-content: center; */
+    /* border: 1px solid black; */
+    /* padding-bottom: 8em; */
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-bottom: 20px;
+    position: relative;
+    /* border: 1px solid black; */
+  }
+
+  .inputTag {
+    width: 50vw;
+  }
+
+  .authContainer {
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
